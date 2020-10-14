@@ -1,0 +1,41 @@
+:root {
+  --main-bg-color: light-gray;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+button {
+  margin-top: 40vh;
+  padding: 5px 2px;
+  font-size: 3rem;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  width: 15rem;
+  height: 5rem;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #f8b195,
+    #f67280,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  );
+  cursor: pointer;
+}
+
+button:hover {
+  background-position: 100% 0;
+  font-size: 2.5rem;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
